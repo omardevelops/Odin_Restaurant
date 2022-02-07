@@ -11,6 +11,7 @@ function initialPageLoad(contentDiv) {
         const link = document.createElement('a');
         link.href = page;
         link.textContent = page;
+        if (page === 'Home')  link.classList.add('currentPage');
         item.appendChild(link);
         navList.appendChild(item);
     }
@@ -32,9 +33,11 @@ function initialPageLoad(contentDiv) {
     homeTopContentDiv.appendChild(showMenuButton);
     homeTopDiv.appendChild(homeTopContentDiv);
 
-    
+    const footer = document.createElement('footer');
+    footer.textContent = 'Copyright 2022 - Omarpixel9';
     contentDiv.appendChild(nav);
     contentDiv.appendChild(homeTopDiv);
+    contentDiv.appendChild(footer);
 }
 
 export default initialPageLoad;
