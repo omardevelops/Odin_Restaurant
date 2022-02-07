@@ -1,1 +1,2 @@
-console.log('chickens');
+import './style.css';
+import './steak.jpg';
