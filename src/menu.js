@@ -1,10 +1,9 @@
-import {clearContent, setNewCurrentPage, menuButton} from "./index";
+import {clearContent, switchTab, menuButton} from "./index";
+
+
 
 const loadMenuPage = () => {
-    // Clear existing content first
-    clearContent();
-    setNewCurrentPage(menuButton);
-    console.log('sayonara');
+    switchTab(menuButton);
 };
 
 export default loadMenuPage;

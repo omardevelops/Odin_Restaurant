@@ -3,6 +3,7 @@ import './steak.jpg';
 import initialPageLoad from './initial-landing';
 import loadMenuPage from './menu';
 import loadContactPage from './contact';
+import loadHomePage from './home';
 
 
 const contentDiv = document.getElementById('content');
@@ -23,16 +24,18 @@ const clearContent = () => {
     }
     );
 };
-const setNewCurrentPage = (element) => {
-    // Clear all current pages
-    
-    navButtons.forEach(button => button.classList.remove('currentPage'));
-
-    // Set new page
-    element.classList.add('currentPage');
+const switchTab = (tab) => {
+    if (tab.classList.contains('currentPage') === false) {
+        // Clear page contents
+        clearContent();
+        // Clear all current pages
+        navButtons.forEach(button => button.classList.remove('currentPage'));
+        // Set new page
+        tab.classList.add('currentPage');
+    }
 };
 const addEventListenersToNavButtons = () => {
-    homeButton.addEventListener('click', console.log('not yet'));
+    homeButton.addEventListener('click', loadHomePage);
     menuButton.addEventListener('click', loadMenuPage);
     contactButton.addEventListener('click', loadContactPage);
 };
@@ -40,9 +43,9 @@ const addEventListenersToNavButtons = () => {
 addEventListenersToNavButtons();
 
 export {
-    clearContent, 
-    setNewCurrentPage, 
-    addEventListenersToNavButtons, 
+    clearContent,
+    switchTab,
+    addEventListenersToNavButtons,
     contentDiv,
     homeButton,
     menuButton,

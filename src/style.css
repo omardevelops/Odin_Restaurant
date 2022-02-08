@@ -57,9 +57,14 @@ nav ul button {
     font-family: inherit;
 }
 
-nav ul button:hover, .currentPage {
+nav ul button:hover {
     background-color: rgb(255, 255, 255);
     color: black;
+}
+
+.currentPage, .currentPage:hover {
+    background-color: rgb(179, 76, 76);
+    color: white;
 }
 
  a:visited, a {
