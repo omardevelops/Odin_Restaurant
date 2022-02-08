@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-image: url('steak.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: bottom;
+    background-position-x: center;
+    height: 100vh;
+}
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+nav {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    flex-direction: column;
+    margin: 0;
+    color: white;
+}
+
+nav h1 {
+    font-size: 3.5em;
+    line-height: 1;
+    margin: 30px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+    padding: 0 50px;
+    margin-bottom: 30px;
+}
+
+nav ul a {
+    font-size: 2em;
+    padding: 15px;
+    border-radius: 30px;
+}
+
+nav ul a:hover, .currentPage {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+ a:visited, a {
+     color: inherit;
+     text-decoration: none;
+ }
+
+#home-top {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#home-top-content {
+    font-size: 42px;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: max(40vw, 40vh);
+    padding: 30px 15px;
+    border-radius: 30px;
+    margin: 5vw;
+}
+
+#home-top-content p {
+    
+    
+}
+
+#home-top div button {
+    width: fit-content;
+    font:inherit;
+    padding: 10px 30px;
+    background: none;
+    color: inherit;
+    border: 2px solid white;
+    transition: 0.2s;
+    border-radius: 15px;
+}
+
+#home-top div button:hover {
+    background: white;
+    color: black;
+    transition: 0.2s;
+}
+
+#home-top-img {
+    background: black;
+    border-radius: 15px;
+    width: 500px;
+    height: 500px;
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+}
