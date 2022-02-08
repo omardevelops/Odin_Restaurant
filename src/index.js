@@ -5,12 +5,16 @@ import loadHomePage from './home';
 import loadMenuPage from './menu';
 import loadContactPage from './contact';
 
-initialBuildWebpage(); // build initial page
+
+initialBuildWebpage(); // Build initial page
+const pageContentDiv = document.getElementById('pageContent');
+loadHomePage(); // Add First Page Content
+
 const clearPageContent = () => {
-    const pageContentDiv = document.getElementById('pageContent');
     const divChildren = Array.from(pageContentDiv.childNodes);
     divChildren.forEach(div => pageContentDiv.removeChild(div));
 };
+
 const addEventListenersToButtons = () => {
     const navButtons = Array.from(document.getElementsByClassName('navButton'));
     navButtons.forEach((button, index) => {
@@ -27,4 +31,4 @@ const addEventListenersToButtons = () => {
 
 addEventListenersToButtons();
 
-export default clearPageContent;
+export {clearPageContent, pageContentDiv};

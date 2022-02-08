@@ -1,5 +1,6 @@
+import { pageContentDiv } from "./index";
+
 const loadHomePage = () => {
-    const pageContentDiv = document.getElementById('pageContent');
     const homeTopDiv = document.createElement('div');
     const homeText = document.createElement('p');
     const showMenuButton = document.createElement('button');

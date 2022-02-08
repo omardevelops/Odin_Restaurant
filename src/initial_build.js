@@ -34,9 +34,6 @@ const initialBuildWebpage = () => {
     const footer = document.createElement('footer');
     contentDiv.appendChild(footer);
     footer.textContent = 'Copyright 2022 - Omarpixel9';
-
-    // Add First Page Content
-    loadHomePage();
 };
 
 export default initialBuildWebpage;
