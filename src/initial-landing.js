@@ -5,14 +5,14 @@ function initialPageLoad(contentDiv) {
     logoHeader.textContent = `Butchin' and Cuttin'`;
     
     const navList = document.createElement('ul');
-    const pages = ['Home', 'Menu', 'Content'];
+    const pages = ['Home', 'Menu', 'Contact'];
     for (const page of pages) {
         const item = document.createElement('li');
-        const link = document.createElement('a');
-        link.href = page;
-        link.textContent = page;
-        if (page === 'Home')  link.classList.add('currentPage');
-        item.appendChild(link);
+        const button = document.createElement('button');
+        button.id = page + 'Btn';
+        button.textContent = page;
+        if (page === 'Home')  button.classList.add('currentPage');
+        item.appendChild(button);
         navList.appendChild(item);
     }
 
@@ -25,7 +25,7 @@ function initialPageLoad(contentDiv) {
     const homeTopContentDiv = document.createElement('div');
     homeTopContentDiv.id = 'home-top-content';
     const taglineText = document.createElement('p');
-    taglineText.textContent = 'Amazing Steak\nFresh Delivery';
+    taglineText.textContent = 'Delcious Steak Available!';
     const showMenuButton = document.createElement('button');
     showMenuButton.addEventListener('click', () => console.log('Menu'));
     showMenuButton.textContent = 'Show Menu';
