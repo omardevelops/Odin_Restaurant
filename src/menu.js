@@ -24,7 +24,7 @@ const loadMenuPage = () => {
     });
 
     // Create menu container with items
-    const menu = ['chicken1', 'chicken2', 'chicken3', 'chicken4', 'chicken5', 'chicken6', 'chicken'];
+    const menu = ['New York Style Strip', 'chicken2', 'chicken3', 'chicken4', 'chicken5', 'chicken6', 'chicken'];
     const menuContainer = document.createElement('div');
     menu.forEach(item => {
         const menuItemDiv = document.createElement('div');

@@ -136,15 +136,23 @@ ul button:hover, .currentCategory {
     align-items: center;
     justify-content: center;
     gap: 15px;
-    padding: 30px;
 }
 
 .menuItem {
     font-size: 24px;
     padding: 15px;
-    background: gray;
+    background: whitesmoke;
     border-radius: 15px;
-    width: 220px;
+    width: 250px;
+    height: 500px;
+    color: black;
+    transition: 0.3s;
+}
+
+.menuItem:hover {
+    background: rgb(179, 76, 76);
+    color: white;
+    transition: 0.3s;
 }
 
 footer {
