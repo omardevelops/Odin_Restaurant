@@ -1,4 +1,4 @@
-import { pageContentDiv } from "./index";
+import { pageContentDiv, switchTab } from "./index";
 
 const loadHomePage = () => {
     const homeTopDiv = document.createElement('div');
