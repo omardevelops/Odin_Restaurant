@@ -2,9 +2,9 @@ body {
     margin: 0;
     font-family: sans-serif;
     background-image: url('steak.jpg');
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: cover;
-    background-position-y: bottom;
+    background-position-y: top;
     background-position-x: center;
     height: 100vh;
 }
@@ -34,7 +34,7 @@ nav h1 {
     margin: 30px 0;
 }
 
-nav ul {
+nav ul, #pageContent #menu ul {
     list-style-type: none;
     display: flex;
     gap: 60px;
@@ -47,7 +47,7 @@ nav ul {
     margin-bottom: 30px;
 }
 
-nav ul button {
+ul button {
     font-size: 2em;
     padding: 15px;
     border-radius: 30px;
@@ -57,7 +57,7 @@ nav ul button {
     font-family: inherit;
 }
 
-nav ul button:hover {
+ul button:hover, .currentCategory {
     background-color: rgb(255, 255, 255);
     color: black;
 }
@@ -80,20 +80,19 @@ nav ul button:hover {
     justify-content: center;
 }
 
-#pageContent #home {
+#pageContent #home, #pageContent #menu, #pageContent #contact {
     font-size: 42px;
     font-weight: 600;
     color: white;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.8);
-    width: max(40vw, 40vh);
     padding: 30px 15px;
     border-radius: 30px;
     margin: 5vw;
 }
 
-#home-top-content p { 
-    
+#pageContent #home {
+    width: max(40vw, 40vh);
 }
 
 #pageContent #home button {
@@ -111,6 +110,39 @@ nav ul button:hover {
     background: white;
     color: black;
     transition: 0.2s;
+}
+
+#pageContent #menu {
+    width: max(60vw, 60vh);
+}
+
+#pageContent #menu h1 {
+    font-size: inherit;
+}
+
+#pageContent #menu ul {
+    font-size: 12px;
+    gap: 15px;
+}
+
+#pageContent #menu ul li button{
+    border: 2px solid white;
+}
+
+#pageContent #menu div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.menuItem {
+    font-size: 24px;
+    padding: 15px;
+    background: gray;
+    border-radius: 15px;
 }
 
 footer {
