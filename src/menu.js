@@ -1,4 +1,6 @@
 import { pageContentDiv } from "./index";
+import steakIcon from "./menu-steak.svg";
+
 const loadMenuPage = () => {
     // Create main container
     const container = document.createElement('div');
@@ -29,9 +31,13 @@ const loadMenuPage = () => {
         menuItemDiv.classList.add('menuItem');
         menuItemDiv.id = item;
 
+        const menuImage = new Image();
+        menuImage.src = steakIcon;
+
         const menuItemName = document.createElement('h2');
         menuItemName.textContent = item;
 
+        menuItemDiv.appendChild(menuImage);
         menuItemDiv.appendChild(menuItemName);
         menuContainer.appendChild(menuItemDiv);
     });

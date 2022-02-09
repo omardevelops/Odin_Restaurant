@@ -113,7 +113,7 @@ ul button:hover, .currentCategory {
 }
 
 #pageContent #menu {
-    width: max(60vw, 60vh);
+    width: max(80vw, 80vh);
 }
 
 #pageContent #menu h1 {
@@ -136,6 +136,7 @@ ul button:hover, .currentCategory {
     align-items: center;
     justify-content: center;
     gap: 15px;
+    padding: 30px;
 }
 
 .menuItem {
@@ -143,6 +144,7 @@ ul button:hover, .currentCategory {
     padding: 15px;
     background: gray;
     border-radius: 15px;
+    width: 220px;
 }
 
 footer {
