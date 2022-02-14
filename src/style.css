@@ -2,9 +2,9 @@ body {
     margin: 0;
     font-family: sans-serif;
     background-image: url('steak.jpg');
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: cover;
-    background-position-y: bottom;
+    background-position-y: top;
     background-position-x: center;
     height: 100vh;
 }
@@ -34,7 +34,7 @@ nav h1 {
     margin: 30px 0;
 }
 
-nav ul {
+nav ul, #pageContent #menu ul {
     list-style-type: none;
     display: flex;
     gap: 60px;
@@ -47,15 +47,24 @@ nav ul {
     margin-bottom: 30px;
 }
 
-nav ul a {
+ul button {
     font-size: 2em;
     padding: 15px;
     border-radius: 30px;
+    background: none;
+    border: none;
+    color: white;
+    font-family: inherit;
 }
 
-nav ul a:hover, .currentPage {
+ul button:hover, .currentCategory {
     background-color: rgb(255, 255, 255);
     color: black;
+}
+
+.currentPage, .currentPage:hover {
+    background-color: rgb(179, 76, 76);
+    color: white;
 }
 
  a:visited, a {
@@ -63,7 +72,7 @@ nav ul a:hover, .currentPage {
      text-decoration: none;
  }
 
-#home-top {
+#pageContent {
     width: 100%;
     box-sizing: border-box;
     display: flex;
@@ -71,24 +80,22 @@ nav ul a:hover, .currentPage {
     justify-content: center;
 }
 
-#home-top-content {
+#pageContent #home, #pageContent #menu, #pageContent #contact {
     font-size: 42px;
     font-weight: 600;
     color: white;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.8);
-    width: max(40vw, 40vh);
     padding: 30px 15px;
     border-radius: 30px;
     margin: 5vw;
 }
 
-#home-top-content p {
-    
-    
+#pageContent #home {
+    width: max(40vw, 40vh);
 }
 
-#home-top div button {
+#pageContent #home button {
     width: fit-content;
     font:inherit;
     padding: 10px 30px;
@@ -99,17 +106,53 @@ nav ul a:hover, .currentPage {
     border-radius: 15px;
 }
 
-#home-top div button:hover {
+#pageContent #home button:hover {
     background: white;
     color: black;
     transition: 0.2s;
 }
 
-#home-top-img {
-    background: black;
+#pageContent #menu {
+    width: max(80vw, 80vh);
+}
+
+#pageContent #menu h1 {
+    font-size: inherit;
+}
+
+#pageContent #menu ul {
+    font-size: 12px;
+    gap: 15px;
+}
+
+#pageContent #menu ul li button{
+    border: 2px solid white;
+}
+
+#pageContent #menu div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.menuItem {
+    font-size: 24px;
+    padding: 15px;
+    background: whitesmoke;
     border-radius: 15px;
-    width: 500px;
+    width: 250px;
     height: 500px;
+    color: black;
+    transition: 0.3s;
+}
+
+.menuItem:hover {
+    background: rgb(179, 76, 76);
+    color: white;
+    transition: 0.3s;
 }
 
 footer {
