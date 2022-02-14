@@ -1,33 +1,6 @@
 import { pageContentDiv } from "./index";
-import steakIcon from "./menu-steak.svg";
+import menu from "./model_menu";
 const categories = ['All', 'Steak', 'Ribs', 'Pizza', 'Drinks', 'Dessert'];
-const menu = [
-    {category:'Steak', name:'New York Style Strip'},
-    {category:'Steak', name:'Sirloin Steak'},
-    {category:'Steak', name:'Tenderloin Steak'},
-    {category:'Steak', name:'Porterhouse Steak'},
-    {category:'Steak', name:'Hanger Steak'},
-    {category:'Ribs', name:'Baby Back Ribs'},
-    {category:'Ribs', name:'St. Louis Style Ribs'},
-    {category:'Ribs', name:'Short Ribs'},
-    {category:'Ribs', name:'Country-Style Ribs'},
-    {category:'Pizza', name:'Pepperoni'},
-    {category:'Pizza', name:'Margharita'},
-    {category:'Pizza', name:'Super Duper Meats Pizza'},
-    {category:'Pizza', name:'Vegan Pizza'},
-    {category:'Pizza', name:'Grilled Chicken'},
-    {category:'Drinks', name:'Orange'},
-    {category:'Drinks', name:'Apple'},
-    {category:'Drinks', name:'Pineapple Mojito'},
-    {category:'Drinks', name:'Blueberry Candy'},
-    {category:'Dessert', name:'Hot Lava Cake'},
-    {category:'Dessert', name:'Ice Cream'},
-    {category:'Dessert', name:'Kunafa'},
-    {category:'Dessert', name:'Um-Ali'},
-    {category:'Dessert', name:'Nutella Crepe'},
-    {category:'Dessert', name:'Chocolate Chip Pie'},
-
-];
 
 const loadMenuPage = () => {
     // Create main container
@@ -58,7 +31,7 @@ const loadMenuPage = () => {
         menuItemDiv.id = item;
 
         const menuImage = new Image();
-        menuImage.src = steakIcon;
+        menuImage.src = item.image;
 
         const menuItemName = document.createElement('h2');
         menuItemName.textContent = item.name;
