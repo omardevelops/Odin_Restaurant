@@ -112,11 +112,11 @@ ul button:hover, .currentCategory {
     transition: 0.2s;
 }
 
-#pageContent #menu {
+#pageContent #menu, #pageContent #contact {
     width: max(80vw, 80vh);
 }
 
-#pageContent #menu h1 {
+#pageContent #menu h1, #contact h1 {
     font-size: inherit;
 }
 
