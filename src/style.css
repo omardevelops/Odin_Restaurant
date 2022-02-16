@@ -155,6 +155,31 @@ ul button:hover, .currentCategory {
     transition: 0.3s;
 }
 
+#contact #subcontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+#contact #subcontainer #left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 40%;
+}
+#contact #subcontainer #left div {
+    border: 2px solid white;
+    width: 100%;
+}
+#contact #subcontainer #left p {
+    font-size: 32px;
+}
+
 footer {
     background: rgba(0, 0, 0, 0.8);
     color: white;
