@@ -15,6 +15,7 @@ const initialBuildWebpage = () => {
         const listItem = document.createElement('li');
         const button = document.createElement('button');
         button.innerText = tab;
+        button.id = tab + 'Button';
         button.classList.add('navButton');
         // Set Home As Current Page
         if (index === 0) button.classList.add('currentPage');
