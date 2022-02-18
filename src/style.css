@@ -112,11 +112,11 @@ ul button:hover, .currentCategory {
     transition: 0.2s;
 }
 
-#pageContent #menu {
+#pageContent #menu, #pageContent #contact {
     width: max(80vw, 80vh);
 }
 
-#pageContent #menu h1 {
+#pageContent #menu h1, #contact h1 {
     font-size: inherit;
 }
 
@@ -154,6 +154,42 @@ ul button:hover, .currentCategory {
     color: white;
     transition: 0.3s;
 }
+
+#contact #subcontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+#contact #subcontainer #left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 40%;
+}
+#contact #subcontainer #left .leftDiv {
+    background: white;
+    color: black;
+    border-radius: 15px;
+    width: 100%;
+    padding: 15px;
+}
+#contact #subcontainer #left p {
+    font-size: 32px;
+}
+#contact #subcontainer #socialSub img {
+    width: 64px;
+    height: 64px;
+    margin: 15px;
+}
+#contact #subcontainer #socialSub img:hover {
+    filter: contrast(0.3);
+}   
 
 footer {
     background: rgba(0, 0, 0, 0.8);
